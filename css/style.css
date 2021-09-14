@@ -1,0 +1,58 @@
+.bestsellers h3 {
+  font-size: 25px;
+}
+
+.testimonios .titleTestimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #272727;
+  margin: 2rem auto;
+}
+.testimonios .cardTestimonio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonios .imageTestimonio {
+  overflow: hidden;
+  border-radius: 1000px;
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+.testimonios .imageTestimonio img {
+  width: 100%;
+}
+
+.titleFeedInstagram {
+  display: flex;
+  justify-content: center;
+  color: #272727;
+  margin: 2rem auto;
+}
+.titleFeedInstagram .instagramText {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.feedInstagram {
+  display: grid;
+  grid-gap: 0.85rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.feedInstagram .imageInstagram {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedInstagram .imageInstagram img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+@import '../base/colors';
+@import '../base/fuentes';
+
+.bestsellers {
+    h3 {
+        font-size: $headline-01;
+    }
+}
+
+.testimonios {
+
+    .titleTestimonios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $color-07;
+        margin: 2rem auto;
+
+    }
+    .cardTestimonio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imageTestimonio {
+        overflow: hidden;
+        border-radius: 1000px;
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.titleFeedInstagram{
+    display: flex;
+    justify-content: center;
+    color: $color-07;
+    margin: 2rem auto;
+
+    .instagramText {
+        font-weight: bold;
+        margin-left: 0.5rem;
+    }
+}
+
+.feedInstagram {
+    display: grid;
+    grid-gap: .85rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    .imageInstagram {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+        
+    }
+}
