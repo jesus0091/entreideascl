@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------------------------------------- Bootstrap V4.6 ------------------------------------------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-------------------------------------------------- Google Fonts -------------------------------------------------->
+    <!-----Pacific------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-----Roboto---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--------------------------------------------------- Fontawesome -------------------------------------------------->
+    <script src="https://kit.fontawesome.com/c03ef37cb0.js" crossorigin="anonymous"></script>
+    <!--------------------------------------------------- Data AOS ----------------------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--------------------------------------------------- Style CSS ---------------------------------------------------->
+    <link rel="stylesheet" href="css/style.css">
+    <!------------------------------------------------------------------------------------------------------------------>
+    <title>EntreIdeas CL</title>
+    <!------------------------------------------------------------------------------------------------------------------>
+</head>
+
+<body>
+    <!--------------------------------------------------- Navigation --------------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">EntreIdeasCL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#/home">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/about">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Arreglos</a>
+                            <a class="dropdown-item" href="#">Papeleria</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#/budget" >Cotizar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--------------------------------------------------- Views -------------------------------------------------------->
+    <div class="py-5 mb-5" id="app"></div>
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--------------------------------------------------- Footer ------------------------------------------------------->
+    <footer>
+
+    </footer>
+    <!--------------------------------------------------- Bootstrap V4.6 ----------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <!--------------------------------------------------- Data AOS ----------------------------------------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--------------------------------------------------- Script's ----------------------------------------------------->
+    <script src="./router/router.js"></script>
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
