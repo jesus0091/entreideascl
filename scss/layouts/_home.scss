@@ -1,8 +1,24 @@
 @import '../base/colors';
 @import '../base/fuentes';
 
+.hero {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, $color-01, $color-02 ) ;
+
+    .heroText {
+        font-size: $large;
+        color: $color-08;
+    }
+}
+
 .bestsellers {
+    padding-top: 5rem;
     h3 {
+        display: flex;
+        justify-content: center;
         font-size: $headline-01;
     }
 }

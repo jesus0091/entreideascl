@@ -1,4 +1,21 @@
+.hero {
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #8058c5, #7987ec);
+}
+.hero .heroText {
+  font-size: 120px;
+  color: white;
+}
+
+.bestsellers {
+  padding-top: 5rem;
+}
 .bestsellers h3 {
+  display: flex;
+  justify-content: center;
   font-size: 25px;
 }
 
@@ -53,6 +70,55 @@
 }
 .feedInstagram .imageInstagram img {
   width: 100%;
+}
+
+footer {
+  padding: 1.5rem;
+  background: #272727;
+}
+footer .footerStyle {
+  display: flex;
+  flex-direction: row;
+}
+footer .imageFooter {
+  overflow: hidden;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1000px;
+}
+footer .imageFooter img {
+  width: 100%;
+}
+footer .bodyFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+footer .bodyFooter p {
+  margin: 0 1rem;
+  color: white;
+}
+footer .bodyFooter .mediaSocial {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 1000px;
+  color: white;
+  margin: 0 0.25rem;
+}
+footer .bodyFooter .instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+footer .bodyFooter .facebook {
+  background: #3b5998;
+}
+footer .bodyFooter .whatsApp {
+  background: #00bb2d;
 }
 
 /*# sourceMappingURL=style.css.map */
