@@ -39,16 +39,22 @@ switch (pathToGo.action) {
     case routes[0].action:
         $.get("./views/home.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-light");
+            $(".scrolling-navbar").addClass("navbar-dark");
         });
         break;
     case routes[1].action:
         $.get("./views/home.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-light");
+            $(".scrolling-navbar").addClass("navbar-dark");
         });
         break;
     case routes[2].action:
         $.get("./views/about.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-dark");
+            $(".scrolling-navbar").addClass("navbar-light");
         });
         break;
     case routes[3].action:
@@ -83,6 +89,8 @@ switch (pathToGo.action) {
     case routes[6].action:
         $.get("./views/budget.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-dark");
+            $(".scrolling-navbar").addClass("navbar-light");
         });
     break;
     default:

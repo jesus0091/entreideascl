@@ -1,0 +1,45 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    .aboutTitleContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutTitle {
+        font-size: $large;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .aboutText {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: relative;
+        
+    }
+
+    .aboutImage{
+        height: 30rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .aboutBodyText {
+        p {
+            font-size: $caption;
+        }
+    }
+}
+
+
+

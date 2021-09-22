@@ -7,19 +7,57 @@
     display: flex;
     align-items: center;
     background: linear-gradient(to right, $color-01, $color-02 ) ;
+    position: relative;
+    z-index: -2;
 
     .heroText {
         font-size: $large;
         color: $color-08;
+        font-weight: bold;
     }
+}
+.ball {
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    height: 100vh;
+    z-index: -1;
 }
 
 .bestsellers {
     padding-top: 5rem;
-    h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .titleBestseller1 {
         display: flex;
         justify-content: center;
         font-size: $headline-01;
+        margin: 0;
+        font-weight: bold;
+    }
+    .titleBestseller2 {
+        display: flex;
+        justify-content: center;
+        font-size: $headline-01;
+        margin-bottom: 3rem;
+    }
+
+    .cardBestseller {
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 2 / 3;
+
+        .imageBestseller {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -34,13 +72,21 @@
         margin: 2rem auto;
 
     }
+
+    .cardTestContainer {
+        display: grid;
+        grid-gap: .85rem;
+        // grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
     .cardTestimonio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
     }
     .imageTestimonio {
+        display: flex;
+        justify-self: center;
         overflow: hidden;
         border-radius: 1000px;
         height: 10rem;
@@ -49,6 +95,24 @@
 
         img {
             width: 100%;
+        }
+    }
+    .bodyTestimonio {
+        display: flex;
+        align-items:flex-start;
+        p {
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .nameTestimonio {
+        display: flex;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
         }
     }
 }
@@ -82,5 +146,16 @@
             width: 100%;
         }
         
+    }
+}
+.feedInstagramContainer {
+    position: relative;
+    margin-bottom: 10rem;
+
+    .ballVector {
+        position: absolute;
+        right: -10%;
+        bottom: -20%;
+        z-index: -1;
     }
 }

@@ -4,19 +4,54 @@
   display: flex;
   align-items: center;
   background: linear-gradient(to right, #8058c5, #7987ec);
+  position: relative;
+  z-index: -2;
 }
 .hero .heroText {
   font-size: 120px;
   color: white;
+  font-weight: bold;
+}
+
+.ball {
+  position: absolute;
+  right: 0;
+  bottom: -10%;
+  height: 100vh;
+  z-index: -1;
 }
 
 .bestsellers {
   padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.bestsellers h3 {
+.bestsellers .titleBestseller1 {
   display: flex;
   justify-content: center;
   font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+}
+.bestsellers .titleBestseller2 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 3rem;
+}
+.bestsellers .cardBestseller {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 2/3;
+}
+.bestsellers .cardBestseller .imageBestseller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestsellers .cardBestseller .imageBestseller img {
+  width: 100%;
 }
 
 .testimonios .titleTestimonios {
@@ -27,13 +62,19 @@
   color: #272727;
   margin: 2rem auto;
 }
+.testimonios .cardTestContainer {
+  display: grid;
+  grid-gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
 .testimonios .cardTestimonio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
 }
 .testimonios .imageTestimonio {
+  display: flex;
+  justify-self: center;
   overflow: hidden;
   border-radius: 1000px;
   height: 10rem;
@@ -42,6 +83,23 @@
 }
 .testimonios .imageTestimonio img {
   width: 100%;
+}
+.testimonios .bodyTestimonio {
+  display: flex;
+  align-items: flex-start;
+}
+.testimonios .bodyTestimonio p {
+  text-align: center;
+  margin: 0;
+}
+.testimonios .nameTestimonio {
+  display: flex;
+  justify-content: center;
+}
+.testimonios .nameTestimonio p {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .titleFeedInstagram {
@@ -72,7 +130,35 @@
   width: 100%;
 }
 
+.feedInstagramContainer {
+  position: relative;
+  margin-bottom: 10rem;
+}
+.feedInstagramContainer .ballVector {
+  position: absolute;
+  right: -10%;
+  bottom: -20%;
+  z-index: -1;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
 footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
   padding: 1.5rem;
   background: #272727;
 }
@@ -109,6 +195,7 @@ footer .bodyFooter .mediaSocial {
   border-radius: 1000px;
   color: white;
   margin: 0 0.25rem;
+  font-size: 1.35rem;
 }
 footer .bodyFooter .instagram {
   background: #d6249f;
@@ -119,6 +206,12 @@ footer .bodyFooter .facebook {
 }
 footer .bodyFooter .whatsApp {
   background: #00bb2d;
+}
+
+.navbar-scroll {
+  background: rgba(128, 88, 197, 0.7);
+  backdrop-filter: blur(5px);
+  transition-duration: 0.6s;
 }
 
 #banner {
@@ -248,6 +341,41 @@ footer .bodyFooter .whatsApp {
 .background-contact #contact-form .input-container:last-child {
   width: 60%;
   justify-self: center;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.about .aboutTitleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .aboutTitle {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.about .aboutText {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about .aboutImage {
+  height: 30rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.about .aboutBodyText p {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
