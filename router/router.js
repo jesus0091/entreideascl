@@ -1,4 +1,7 @@
 /*----------------------------------------------------------------------------------------*/ 
+
+const URLGET = "json/productos.json";
+
 const routes = [{
     path: "",
     action: "home"
@@ -16,9 +19,17 @@ const routes = [{
     action: "contact"
 },
 {
+    path: "/arreglos",
+    action: "arreglos"
+},
+{
+    path: "/papeleria",
+    action: "papeleria"
+},
+{
     path: "/budget",
     action: "budget"
-},
+}
 ];
 /*----------------------------------------------------------------------------------------*/
 const router = () => {
@@ -46,6 +57,30 @@ switch (pathToGo.action) {
         });
         break;
     case routes[4].action:
+        $.get("./views/productos.html", function (data) {
+            $("#app").html(data);
+            $.getJSON(URLGET, function (respuesta, estado) {
+                if(estado === "success"){
+                    const arrayDecoracion = respuesta;
+                    renderizarTituloBanner('banner', 'Decoracion para eventos')
+                    renderizarCards(arrayDecoracion, 'cards-container');
+                }
+            });
+        });
+        break;
+    case routes[5].action:
+        $.get("./views/productos.html", function (data) {
+            $("#app").html(data);
+            $.getJSON(URLGET, function (respuesta, estado) {
+                if(estado === "success"){
+                  const arrayPapeleria = respuesta;
+                  renderizarTituloBanner('banner', 'Papeleria creativa')
+                  renderizarCards(arrayPapeleria, 'cards-container');
+                }
+            });
+        });
+        break;
+    case routes[6].action:
         $.get("./views/budget.html", function (data) {
             $("#app").html(data);
         });
