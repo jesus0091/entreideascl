@@ -8,6 +8,7 @@
     align-items: center;
     background: linear-gradient(to right, $color-01, $color-02 ) ;
     position: relative;
+    z-index: -2;
 
     .heroText {
         font-size: $large;
@@ -20,6 +21,7 @@
     right: 0;
     bottom: -10%;
     height: 100vh;
+    z-index: -1;
 }
 
 .bestsellers {
@@ -70,13 +72,21 @@
         margin: 2rem auto;
 
     }
+
+    .cardTestContainer {
+        display: grid;
+        grid-gap: .85rem;
+        // grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
     .cardTestimonio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
     }
     .imageTestimonio {
+        display: flex;
+        justify-self: center;
         overflow: hidden;
         border-radius: 1000px;
         height: 10rem;
@@ -85,6 +95,24 @@
 
         img {
             width: 100%;
+        }
+    }
+    .bodyTestimonio {
+        display: flex;
+        align-items:flex-start;
+        p {
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .nameTestimonio {
+        display: flex;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
         }
     }
 }
