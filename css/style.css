@@ -288,25 +288,58 @@ footer .bodyFooter .whatsApp {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -10;
   opacity: 0.15;
   overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
 .background-contact .img-container img {
-  position: relative;
   width: 100%;
-  left: 2rem;
 }
-.background-contact .contact-header {
-  margin: 5rem 1rem 2.5rem;
+@media (min-width: 567px) and (max-width: 767px) {
+  .background-contact .img-container img {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .background-contact .img-container img {
+    width: min(60%, 1200px);
+    max-height: 56rem;
+  }
+}
+.background-contact .form-container {
+  margin: 0 auto;
+}
+@media (min-width: 567px) and (max-width: 767px) {
+  .background-contact .form-container {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .background-contact .form-container {
+    width: min(80%, 1200px);
+  }
+}
+.background-contact .form-container .contact-header {
+  margin: 8rem 1rem 3rem;
   font-size: 15px;
   font-weight: 400;
 }
-.background-contact .contact-header strong {
+@media (min-width: 768px) {
+  .background-contact .form-container .contact-header {
+    font-size: 48px;
+  }
+}
+.background-contact .form-container .contact-header strong {
   font-size: 20px;
   font-weight: 800;
 }
-.background-contact #contact-form {
+@media (min-width: 768px) {
+  .background-contact .form-container .contact-header strong {
+    font-size: 48px;
+  }
+}
+.background-contact .form-container #contact-form {
   display: grid;
   grid-template-columns: repeat(2, minmax(4rem, 1fr));
   grid-auto-rows: auto;
@@ -316,31 +349,43 @@ footer .bodyFooter .whatsApp {
   padding: 1rem;
   opacity: 1;
 }
-.background-contact #contact-form .input-container {
+.background-contact .form-container #contact-form .input-container {
   grid-column: span 2;
 }
-.background-contact #contact-form .input-container input, .background-contact #contact-form .input-container textarea {
+.background-contact .form-container #contact-form .input-container input, .background-contact .form-container #contact-form .input-container textarea {
   width: 100%;
   border: none;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.75rem;
   background-color: #f3f2f2;
 }
-.background-contact #contact-form .input-container textarea {
-  min-height: 8rem;
+.background-contact .form-container #contact-form .input-container textarea {
+  min-height: 9rem;
 }
-.background-contact #contact-form .input-container input[type=submit] {
+.background-contact .form-container #contact-form .input-container input[type=submit] {
   background: linear-gradient(180deg, #8058c5, #7987ec);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   color: white;
-  padding: 0.6rem;
-  margin: 2rem 0;
+  padding: 1rem;
+  margin: 2rem 0 4rem;
 }
-.background-contact #contact-form .input-container:nth-child(2), .background-contact #contact-form .input-container:nth-child(3) {
+.background-contact .form-container #contact-form .input-container:nth-child(2), .background-contact .form-container #contact-form .input-container:nth-child(3) {
   grid-column: span 1;
 }
-.background-contact #contact-form .input-container:last-child {
+.background-contact .form-container #contact-form .input-container:last-child {
   width: 60%;
   justify-self: center;
+}
+@media (min-width: 567px) and (max-width: 767px) {
+  .background-contact .form-container #contact-form .input-container:last-child {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .background-contact .form-container #contact-form .input-container:last-child {
+    grid-column: 2/3;
+    width: 75%;
+    justify-self: end;
+  }
 }
 
 .about {

@@ -60,11 +60,15 @@ switch (pathToGo.action) {
     case routes[3].action:
         $.get("./views/contact.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-dark");
+            $(".scrolling-navbar").addClass("navbar-light");
         });
         break;
     case routes[4].action:
         $.get("./views/productos.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-light");
+            $(".scrolling-navbar").addClass("navbar-dark");
             $.getJSON(URLGET, function (respuesta, estado) {
                 if(estado === "success"){
                     const arrayDecoracion = respuesta;
@@ -77,6 +81,8 @@ switch (pathToGo.action) {
     case routes[5].action:
         $.get("./views/productos.html", function (data) {
             $("#app").html(data);
+            $(".scrolling-navbar").removeClass("navbar-light");
+            $(".scrolling-navbar").addClass("navbar-dark");
             $.getJSON(URLGET, function (respuesta, estado) {
                 if(estado === "success"){
                   const arrayPapeleria = respuesta;
