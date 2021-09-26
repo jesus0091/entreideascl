@@ -25,7 +25,7 @@ const renderizarCards = (pProductos, pIdContainer) => {
 }
 
 const renderizarTituloBanner = (pIdContainer, pTitulo) => {
-    const contenedor = document.getElementById(pIdContainer).firstElementChild;
+    const contenedor = document.getElementById(pIdContainer).firstElementChild.firstElementChild;
     const titulo = document.createElement('H2');
     titulo.innerText = pTitulo;
     contenedor.appendChild(titulo);

@@ -1,0 +1,42 @@
+[
+    {
+        "img": "./image/10.png",
+        "producto": "Etiquetas impresas",
+        "descripcion": "Para vasos, platos y bebidas"
+    },
+    {
+        "img": "./image/5.png",
+        "producto": "Cajas para cotillón",
+        "descripcion": "Disenios especiales"
+    },
+    {
+        "img": "./image/A.png",
+        "producto": "Bolsas para cotillón",
+        "descripcion": "Disenios especiales"
+    },
+    {
+        "img": "./image/bestseller-2.png",
+        "producto": "Fondos para paredes",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/3.png",
+        "producto": "Carteles para paredes",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/2.png",
+        "producto": "Impresión de stiker",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/9.png",
+        "producto": "Papelería",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/6.png",
+        "producto": "Letras / Números",
+        "descripcion": "Disenios en 3D personalizados"
+    }
+]
