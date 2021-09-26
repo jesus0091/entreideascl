@@ -1,6 +1,8 @@
 /*----------------------------------------------------------------------------------------*/ 
 
-const URLGET = "json/productos.json";
+const URLARREGLOS = "json/arreglos.json";
+const URLPAPEL = "json/papeleria.json";
+
 
 const routes = [{
     path: "",
@@ -67,12 +69,20 @@ switch (pathToGo.action) {
     case routes[4].action:
         $.get("./views/productos.html", function (data) {
             $("#app").html(data);
-            $(".scrolling-navbar").removeClass("navbar-light");
-            $(".scrolling-navbar").addClass("navbar-dark");
-            $.getJSON(URLGET, function (respuesta, estado) {
+            if(window.screen.width > 767){
+                $(".scrolling-navbar").removeClass("navbar-light");
+                $(".scrolling-navbar").addClass("navbar-dark");
+            }
+            else {
+                $(".scrolling-navbar").removeClass("navbar-dark");
+                $(".scrolling-navbar").addClass("navbar-light");
+            }
+            $(".banner-container").removeClass("banner-bg-color-2");
+            $(".banner-container").addClass("banner-bg-color-1");
+            $.getJSON(URLARREGLOS, function (respuesta, estado) {
                 if(estado === "success"){
                     const arrayDecoracion = respuesta;
-                    renderizarTituloBanner('banner', 'Decoracion para eventos')
+                    renderizarTituloBanner('banner', 'Arreglos de\neventos')
                     renderizarCards(arrayDecoracion, 'cards-container');
                 }
             });
@@ -81,12 +91,20 @@ switch (pathToGo.action) {
     case routes[5].action:
         $.get("./views/productos.html", function (data) {
             $("#app").html(data);
-            $(".scrolling-navbar").removeClass("navbar-light");
-            $(".scrolling-navbar").addClass("navbar-dark");
-            $.getJSON(URLGET, function (respuesta, estado) {
+            if(window.screen.width > 767){
+                $(".scrolling-navbar").removeClass("navbar-light");
+                $(".scrolling-navbar").addClass("navbar-dark");
+            }
+            else {
+                $(".scrolling-navbar").removeClass("navbar-dark");
+                $(".scrolling-navbar").addClass("navbar-light");
+            }
+            $(".banner-container").removeClass("banner-bg-color-1");
+            $(".banner-container").addClass("banner-bg-color-2");
+            $.getJSON(URLPAPEL, function (respuesta, estado) {
                 if(estado === "success"){
                   const arrayPapeleria = respuesta;
-                  renderizarTituloBanner('banner', 'Papeleria creativa')
+                  renderizarTituloBanner('banner', 'Papelería\ncreativa')
                   renderizarCards(arrayPapeleria, 'cards-container');
                 }
             });

@@ -1,0 +1,42 @@
+[
+    {
+        "img": "./image/bebes-llorones.png",
+        "producto": "Caketopper sencillo",
+        "descripcion": "Impresión a un color y 1 capa"
+    },
+    {
+        "img": "./image/valentina.png",
+        "producto": "Caketopper en relieve",
+        "descripcion": "Impresión a color y 3 capas"
+    },
+    {
+        "img": "./image/antonia.png",
+        "producto": "Caketopper full relieve",
+        "descripcion": "Impresión a color y más de 3 capas"
+    },
+    {
+        "img": "./image/david.png",
+        "producto": "Caketopper shaker",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/4.png",
+        "producto": "Arreglos decorativos",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/8.png",
+        "producto": "Recuerdos de motivos",
+        "descripcion": "Dulces y florales"
+    },
+    {
+        "img": "./image/11.png",
+        "producto": "Decoración de globos",
+        "descripcion": "Disenios personalizados"
+    },
+    {
+        "img": "./image/7.png",
+        "producto": "Bandejas de desayuno",
+        "descripcion": "Disenios especiales"
+    }
+]
