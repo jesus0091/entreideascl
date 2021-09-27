@@ -1,0 +1,27 @@
+<svg width="274" height="293" viewBox="0 0 274 293" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dd)">
+<path d="M229.28 111.642C229.28 168.325 183.331 214.28 126.641 214.28C69.9463 214.28 24 168.325 24 111.642C24 54.9548 69.948 9 126.641 9C183.332 9 229.28 54.9564 229.28 111.642Z" fill="url(#paint0_radial)"/>
+</g>
+<defs>
+<filter id="filter0_dd" x="0" y="0" width="273.28" height="292.28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="10" dy="44"/>
+<feGaussianBlur stdDeviation="17"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0.396226 0 0 0 0.11 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="5" dy="5"/>
+<feGaussianBlur stdDeviation="7"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(98.681 62.8108) rotate(59.9818) scale(157.033 157.034)">
+<stop stop-color="#f9f871"/>
+<stop offset="0.539272" stop-color="#ffc75f"/>
+<stop offset="0.880208" stop-color="#ff9671"/>
+<stop offset="1" stop-color="#ff6f91"/>
+</radialGradient>
+</defs>
+</svg>
