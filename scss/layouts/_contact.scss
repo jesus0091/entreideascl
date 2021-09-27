@@ -13,6 +13,7 @@
         overflow: hidden;
         display: flex;
         justify-content: flex-end;
+        z-index: -1;
 
         img {
             width: 100%;
@@ -38,9 +39,10 @@
         }
 
         .contact-header {
-            margin: 8rem 1rem 3rem;
+            margin: 8rem 0rem 3rem;
             font-size: $sub-headline-02;
             font-weight: 400;
+            line-height: 1;
 
             @media (min-width: 768px){
                 font-size: $title-01;
@@ -63,7 +65,7 @@
             grid-gap: 1rem;
             justify-content: space-evenly;
             width: 100%;
-            padding: 1rem;
+            padding: 1rem 0;
             opacity: 1;
         
             .input-container {
@@ -73,11 +75,19 @@
                     width: 100%;
                     border: none;
                     padding: 1rem .75rem;
-                    background-color: $color-09;
+                    background: rgba($color-09, 0.5);
+
+                    &:focus {
+                        border: none;
+                        outline: none;
+                        box-shadow: 0px 0px 2px 1px $color-01;
+
+                    }
                 }
         
                 textarea {
                     min-height: 9rem;
+                    resize: none;
                 }
         
                 input[type='submit']{
@@ -86,6 +96,11 @@
                     color: $color-08;
                     padding: 1rem;
                     margin: 2rem 0 4rem;
+                    box-shadow: none !important;
+
+                    &:active {
+                        transform: scale(0.98);
+                    }
                 }
         
                 &:nth-child(2), &:nth-child(3){

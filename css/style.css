@@ -338,6 +338,7 @@ footer .bodyFooter .whatsApp {
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
+  z-index: -1;
 }
 .background-contact .img-container img {
   width: 100%;
@@ -367,9 +368,10 @@ footer .bodyFooter .whatsApp {
   }
 }
 .background-contact .form-container .contact-header {
-  margin: 8rem 1rem 3rem;
+  margin: 8rem 0rem 3rem;
   font-size: 15px;
   font-weight: 400;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .background-contact .form-container .contact-header {
@@ -392,7 +394,7 @@ footer .bodyFooter .whatsApp {
   grid-gap: 1rem;
   justify-content: space-evenly;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   opacity: 1;
 }
 .background-contact .form-container #contact-form .input-container {
@@ -402,10 +404,16 @@ footer .bodyFooter .whatsApp {
   width: 100%;
   border: none;
   padding: 1rem 0.75rem;
-  background-color: #f3f2f2;
+  background: rgba(243, 242, 242, 0.5);
+}
+.background-contact .form-container #contact-form .input-container input:focus, .background-contact .form-container #contact-form .input-container textarea:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 2px 1px #8058c5;
 }
 .background-contact .form-container #contact-form .input-container textarea {
   min-height: 9rem;
+  resize: none;
 }
 .background-contact .form-container #contact-form .input-container input[type=submit] {
   background: linear-gradient(180deg, #8058c5, #7987ec);
@@ -413,6 +421,10 @@ footer .bodyFooter .whatsApp {
   color: white;
   padding: 1rem;
   margin: 2rem 0 4rem;
+  box-shadow: none !important;
+}
+.background-contact .form-container #contact-form .input-container input[type=submit]:active {
+  transform: scale(0.98);
 }
 .background-contact .form-container #contact-form .input-container:nth-child(2), .background-contact .form-container #contact-form .input-container:nth-child(3) {
   grid-column: span 1;
@@ -467,6 +479,57 @@ footer .bodyFooter .whatsApp {
 }
 .about .aboutBodyText p {
   font-size: 18px;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.slide-right {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
