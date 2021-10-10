@@ -8,3 +8,14 @@ $color-06: rgb(255 117 90);
 $color-07: rgb(39 39 39);
 $color-08: rgb(255 255 255);
 $color-09: rgb(243 242 242);
+
+
+:root {
+    --navbar-color: rgba(0 0 0 / 1);
+}
+
+
+.navbar-dark {
+    --navbar-color: rgba(255 255 255 / 1);
+
+}

@@ -96,3 +96,40 @@ footer {
     backdrop-filter: blur(5px);
 	transition-duration: 0.6s;
 }
+
+nav {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+}
+
+#navbarSupportedContent {
+    
+
+    .nav-link {
+        margin: 0 1rem;
+        font-family: 'Roboto', sans-serif;
+        transition: 0.2s ease all;
+        
+
+        &:hover, :active {
+            box-shadow: 0px 3px 0px var(--navbar-color);
+            color: var(--navbar-color);
+        }
+    }
+}
+
+#navbarDropdown {
+    &::after {
+        content: none;
+    }
+}
+
+.dropdown-menu {
+    margin-top: 0.5rem;
+    border-radius: 10px;
+
+    i {
+        color: $color-02;
+    }
+}
