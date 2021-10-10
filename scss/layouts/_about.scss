@@ -39,6 +39,36 @@
             font-size: $caption;
         }
     }
+    @media (max-width: 768px) {
+        .aboutTitle {
+            font-size: 40px;
+        }
+    
+        .aboutText {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            position: relative;
+            
+        }
+    
+        .aboutImage{
+            height: 30%;
+            position: absolute;
+            left: 0;
+            top: 5%;
+            z-index: -1;
+        }
+    
+        .aboutBodyText {
+            p {
+                font-size: 0.85rem;
+            }
+        }
+
+        
+    }
 }
 
 
