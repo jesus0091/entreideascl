@@ -1,4 +1,9 @@
 #banner {
+    
+    @media (max-width: 992px){
+        padding: 60px 10px 0 10px;
+        
+    }
 
     .banner-bg-color-1 {
         background: linear-gradient(90deg, $color-01, $color-02);
@@ -21,11 +26,11 @@
         position: relative;
         z-index: 1;
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             height: max(40vh, 15rem);
-            width: 90%;
+            width: 100%;
             border-radius: 2rem;
-            margin: 4rem auto 0;
+            // margin: 4rem 10px 0;
         }
     
         .text-container {
@@ -37,7 +42,7 @@
                 font-weight: bold;
                 font-size: $large;
 
-                @media (max-width: 768px) {
+                @media (max-width: 992px) {
                     font-size: $headline-04;
                     margin-left: 5%;
                 }
@@ -51,10 +56,13 @@
             height: 100vh;
             z-index: 20;
 
-            @media (max-width: 768px) {
-                height: 95%;
-                right: -5%;
-                top: 2.5%;
+            @media (max-width: 992px) {
+                // height: 110%;
+                // right: -5%;
+                // top: 2.5%;
+                top: 0;
+                right: -10px;
+                height: 45vh;
             }
         }
     }

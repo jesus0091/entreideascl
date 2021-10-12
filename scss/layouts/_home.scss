@@ -113,12 +113,12 @@
         }
     }
     
-    @media (max-width: 992px) {
+    @media (min-width: 769px) and (max-width: 992px) {
         .titleBestseller1 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
         .titleBestseller2 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 }
@@ -149,7 +149,7 @@
         justify-content: center;
         color: $color-07;
         margin: 6rem auto;
-        font-size: $headline-04;
+        // font-size: $headline-04;
         line-height: 1;
 
         :nth-child(1){
@@ -159,7 +159,7 @@
             font-size: 1.5rem;
             margin: 2rem auto 2rem;
         }
-        @media (max-width: 992px) {
+        @media (min-width: 769px) and (max-width: 992px) {
             font-size: 2rem;
             margin: 3rem auto 2rem;
         }
@@ -256,7 +256,7 @@
         font-size: 1.5rem;
         margin: 2rem auto 2rem;
     }
-    @media (max-width: 992px) {
+    @media (min-width: 769px) and (max-width: 992px) {
         font-size: 2rem;
         margin: 3rem auto 2rem;
     }
