@@ -10,7 +10,7 @@ const armarCard = (pProducto) => {
         <h4>${pProducto.producto}</h4>
         <p>${pProducto.descripcion}</p>
     </div>
-    <input type="button" value="Cotizar">`;
+    <input type="button" value="Cotizar" class="product-button">`;
     return card;
 }
 
@@ -22,6 +22,19 @@ const renderizarCards = (pProductos, pIdContainer) => {
         fragmento.appendChild(armarCard(producto));
     }
     contenedor.appendChild(fragmento);
+    const botones = document.getElementsByClassName('product-button');
+    for(const boton of botones){
+        boton.addEventListener('click', (e) => {
+            const textoProducto = e.target.parentElement.children[1].firstElementChild.innerText;
+            window.location.hash = '/contact';
+            window.scrollTo(0, 0);
+            const temp = setTimeout(() => {
+                const form = document.getElementById('contact-form');
+                console.log(form);
+                form.children[3].lastElementChild.value = textoProducto;
+            }, 150)
+        });
+    }
 }
 
 const renderizarTituloBanner = (pIdContainer, pTitulo) => {

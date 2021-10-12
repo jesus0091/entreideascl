@@ -64,6 +64,7 @@ switch (pathToGo.action) {
             $("#app").html(data);
             $(".scrolling-navbar").removeClass("navbar-dark");
             $(".scrolling-navbar").addClass("navbar-light");
+            mailer();
         });
         break;
     case routes[4].action:

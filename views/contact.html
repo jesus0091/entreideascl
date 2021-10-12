@@ -4,26 +4,26 @@
     </div>
     <div class="form-container container">
         <h2 class="contact-header slide-right"><strong>Formulario</strong><br>de cotización</h2>
-        <form action="" id="contact-form">
+        <form action="" method="POST" id="contact-form">
             <div class="input-container">
                 <label for="cliente" hidden>Nombre y apellido</label>
-                <input type="text" id="cliente" placeholder="Nombre y apellido">
+                <input type="text" id="cliente" name="nombre" placeholder="Nombre y apellido" required>
             </div>
             <div class="input-container">
                 <label for="email" hidden>Email</label>
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="input-container">
                 <label for="telefono" hidden>Número de contacto</label>
-                <input type="text" id="telefono" placeholder="Numero de contacto">
+                <input type="text" id="telefono" name="telefono" placeholder="Numero de contacto" required>
             </div>
             <div class="input-container">
                 <label for="productos" hidden>Productos</label>
-                <input type="text" id="productos" placeholder="Nombre producto (s)">
+                <input type="text" id="productos" name="producto" placeholder="Nombre producto (s)" required>
             </div>
             <div class="input-container">
                 <label for="detalles" hidden>Detalles del pedido</label>
-                <textarea id="detalles" placeholder="Detalles"></textarea>
+                <textarea id="detalles" name="consulta" placeholder="Detalles" required></textarea>
             </div>
             <div class="input-container pulsate-fwd">
                 <input class="pulsate-fwd" type="submit" value="Enviar cotización">

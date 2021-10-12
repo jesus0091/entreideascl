@@ -809,6 +809,17 @@ nav {
     font-size: 48px;
   }
 }
+.background-contact .form-container .form-msg {
+  text-align: center;
+  color: #666;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .background-contact .form-container .form-msg {
+    margin-bottom: 2rem;
+    font-size: large;
+  }
+}
 .background-contact .form-container #contact-form {
   display: grid;
   grid-template-columns: repeat(2, minmax(4rem, 1fr));
@@ -842,8 +853,13 @@ nav {
   border-radius: 0.75rem;
   color: white;
   padding: 1rem;
-  margin: 2rem 0 4rem;
+  margin: 2rem 0 3rem;
   box-shadow: none !important;
+}
+@media (max-width: 767px) {
+  .background-contact .form-container #contact-form .input-container input[type=submit] {
+    margin-bottom: 1.5rem;
+  }
 }
 .background-contact .form-container #contact-form .input-container input[type=submit]:active {
   transform: scale(0.98);
