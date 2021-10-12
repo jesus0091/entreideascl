@@ -124,12 +124,12 @@
     font-size: 1.5rem;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .bestsellers .titleBestseller1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .bestsellers .titleBestseller2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -157,7 +157,6 @@
   justify-content: center;
   color: #272727;
   margin: 6rem auto;
-  font-size: 37px;
   line-height: 1;
 }
 .testimonios .titleTestimonios :nth-child(1) {
@@ -169,7 +168,7 @@
     margin: 2rem auto 2rem;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .testimonios .titleTestimonios {
     font-size: 2rem;
     margin: 3rem auto 2rem;
@@ -258,7 +257,7 @@
     margin: 2rem auto 2rem;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .titleFeedInstagram {
     font-size: 2rem;
     margin: 3rem auto 2rem;
@@ -638,6 +637,11 @@ nav {
   color: black;
 }
 
+@media (max-width: 992px) {
+  #banner {
+    padding: 60px 10px 0 10px;
+  }
+}
 #banner .banner-bg-color-1 {
   background: linear-gradient(90deg, #8058c5, #7987ec);
 }
@@ -661,12 +665,11 @@ nav {
   position: relative;
   z-index: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #banner .banner-container {
     height: max(40vh, 15rem);
-    width: 90%;
+    width: 100%;
     border-radius: 2rem;
-    margin: 4rem auto 0;
   }
 }
 #banner .banner-container .text-container {
@@ -678,7 +681,7 @@ nav {
   font-weight: bold;
   font-size: 120px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #banner .banner-container .text-container h2 {
     font-size: 37px;
     margin-left: 5%;
@@ -691,11 +694,11 @@ nav {
   height: 100vh;
   z-index: 20;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #banner .banner-container .img {
-    height: 95%;
-    right: -5%;
-    top: 2.5%;
+    top: 0;
+    right: -10px;
+    height: 45vh;
   }
 }
 
@@ -871,6 +874,11 @@ nav {
   justify-content: center;
   height: 80vh;
 }
+@media (max-width: 768px) {
+  .about {
+    margin-top: 70px;
+  }
+}
 .about .aboutTitleContent {
   display: flex;
   justify-content: center;
@@ -922,7 +930,10 @@ nav {
     font-size: 0.85rem;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .about .aboutTitle {
+    font-size: 60px;
+  }
   .about .aboutImage {
     height: 80%;
     position: absolute;
