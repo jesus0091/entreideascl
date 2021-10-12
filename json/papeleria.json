@@ -7,36 +7,36 @@
     {
         "img": "./image/5.png",
         "producto": "Cajas para cotillón",
-        "descripcion": "Disenios especiales"
+        "descripcion": "Diseños especiales"
     },
     {
         "img": "./image/A.png",
         "producto": "Bolsas para cotillón",
-        "descripcion": "Disenios especiales"
+        "descripcion": "Diseños especiales"
     },
     {
         "img": "./image/bestseller-2.png",
         "producto": "Fondos para paredes",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/3.png",
         "producto": "Carteles para paredes",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/2.png",
         "producto": "Impresión de stiker",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/9.png",
         "producto": "Papelería",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/6.png",
         "producto": "Letras / Números",
-        "descripcion": "Disenios en 3D personalizados"
+        "descripcion": "Diseños en 3D personalizados"
     }
 ]

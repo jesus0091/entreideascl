@@ -17,12 +17,12 @@
     {
         "img": "./image/david.png",
         "producto": "Caketopper shaker",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/4.png",
         "producto": "Arreglos decorativos",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/8.png",
@@ -32,11 +32,11 @@
     {
         "img": "./image/11.png",
         "producto": "Decoración de globos",
-        "descripcion": "Disenios personalizados"
+        "descripcion": "Diseños personalizados"
     },
     {
         "img": "./image/7.png",
         "producto": "Bandejas de desayuno",
-        "descripcion": "Disenios especiales"
+        "descripcion": "Diseños especiales"
     }
 ]
