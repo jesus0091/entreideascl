@@ -26,14 +26,13 @@
 
 <body>
     <!--------------------------------------------------- Navigation --------------------------------------------------->
-    <header class="container-fluid fixed-top navbar-dark scrolling-navbar">
-        <nav class="navbar container navbar-expand-lg  ">
+    <header class="px-0 container-fluid fixed-top navbar-dark scrolling-navbar">
+        <nav class="d-none d-lg-flex navbar container navbar-expand-md  ">
             <a class="navbar-brand" href="#">Entreideascl</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" aria-haspopup="true">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -45,12 +44,12 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Productos
+                            Productos <i class="mx-1 fas fa-chevron-down"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#/arreglos">Arreglos</a>
-                            <a class="dropdown-item" href="#/papeleria">Papeleria</a>
-                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#/arreglos"><i class="fas fa-chevron-right mr-1"></i>Arreglos</a>
+                            <a class="dropdown-item" href="#/papeleria"><i class="fas fa-chevron-right mr-1"></i>Papeleria</a>
+                            <div class="dropdown-item"></div>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -59,9 +58,30 @@
                 </ul>
             </div>
         </nav>
+        <div class="d-lg-none mobile-wrap fixed-top scrolling-navbar navbar-dark">
+            <div class="mobile clearfix">
+                <div class="header">
+                    <span class="ion-ios-navicon pull-left"><i class="fas fa-bars"></i></span>
+                    <span class="title">EntreIdeasCL</span>
+                    <span class="ion-ios-search pull-right"></span>
+                </div>
+                <div class="sidebar">
+                    <div class="sidebar-overlay"></div>
+                    <div class="sidebar-content">
+                        <div class="nav-left">
+                            <a href="#/home"><span class="ion-ios-home-outline"></span>Inicio</a>
+                            <a href="#/about"><span class="ion-ios-list-outline"></span>Quienes somos</a>
+                            <a href="#/arreglos"><span class="ion-ios-compose-outline"></span>Arreglos</a>
+                            <a href="#/papeleria"><span class="ion-ios-chatboxes-outline"></span>Papeleria</a>
+                            <a href="#/contact"><span class="ion-ios-person-outline"></span>Cotizar</a>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
     </header>
     <!--------------------------------------------------- Views -------------------------------------------------------->
-    <div class="mb-5 w-100 overflow-hidden" id="app"></div>
+    <div class="mb-md-5 w-100 overflow-hidden" id="app"></div>
     <!------------------------------------------------------------------------------------------------------------------>
     <!--------------------------------------------------- Footer ------------------------------------------------------->
     <footer>
@@ -71,15 +91,17 @@
             </div>
             <div class="bodyFooter">
                 <p>Siguenos en nuestras redes</p>
-                <a class="mediaSocial instagram" href="">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="mediaSocial facebook" href="">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="mediaSocial whatsApp" href="">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                <div class="media">
+                    <a class="mediaSocial instagram" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="mediaSocial facebook" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="mediaSocial whatsApp" href="">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
