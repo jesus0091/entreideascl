@@ -1,34 +1,29 @@
-const validarForm = () => {
-    const nombre = document.getElementById('cliente').value;
-    const email = document.getElementById('email').value;
-    const cel = document.getElementById('telefono').value;
-    const producto = document.getElementById('productos').value;
-    const msg = document.getElementById('detalles').value;
-
-    if(nombre.length < 3){
+const validarForm = (pNombre, pEmail, pCel, pProducto, pMsg) => {
+    
+    if(pNombre.length < 3){
         alert('Ingrese un nombre valido');
         return false;
     }
 
-    if(email){
+    if(pEmail){
         expReg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if(!expReg.test(email)){
+        if(!expReg.test(pEmail)){
             alert('Ingrese un email valido');
             return false;
         }
     }
 
-    if(cel.length < 7){
+    if(pCel.length < 6 || isNaN(pCel)){
         alert('Ingrese un numero de telefono valido');
         return false;
     }
     
-    if(producto == ''){
+    if(pProducto == ''){
         alert('Ingrese un producto para su consulta');
         return false;
     }
 
-    if(msg == '' || msg.length > 200){
+    if(pMsg == '' || pMsg.length > 200){
         alert('Debe ingresar un mensaje de hasta 200 caracteres');
         return false;
     }
@@ -38,21 +33,45 @@ const validarForm = () => {
 
 const mailer = () => {
     const $form = document.getElementById('contact-form');
-    const $buttonMailto = document.getElementById('mail-button');
 
     $form.addEventListener('submit', (e) => {
         e.preventDefault();
         const form = new FormData(e.target);
-        let msg = `Datos de cliente:
-            Nombre: ${form.get('nombre')}
-            Correo: ${form.get('email')}
-            Telefono: ${form.get('telefono')}
-            
-            Producto: ${form.get('producto')}
-            
-            Consulta:
-            ${form.get('consulta')}`;
-        $buttonMailto.setAttribute('href', `mailto:uki.greco@gmail.com?subject=Consulta de cliente por producto ${form.get('producto')} - ${form.get('email')}&body=${msg}`);
-        $buttonMailto.click();
+        const nombre = form.get('nombre');
+        const email = form.get('email');
+        const cel = form.get('telefono');
+        const producto = form.get('producto');
+        const msg = form.get('consulta');
+
+        if(validarForm(nombre, email, cel, producto, msg)){
+            $.ajax({
+                method: 'POST',
+                url: 'https://formsubmit.co/ajax/uki.greco@gmail.com',
+                dataType: 'json',
+                accepts: 'application/json',
+                data: {
+                    Cliente: nombre,
+                    Correo: email,
+                    Telefono: cel,
+                    Producto: producto,
+                    Mensage: msg
+                },
+                success: (data) => {
+                    console.log(data);
+                    const contenedoresInput = e.target.children;
+                    for (const contenedor of contenedoresInput) {
+                        if(contenedor.lastElementChild.type != 'submit'){
+                            contenedor.lastElementChild.value = '';
+                        }
+                    }
+                    const divExito = document.createElement('DIV');
+                    divExito.innerHTML = 'Su consulta ha sido enviada con exito!';
+                    divExito.classList.add('form-msg');
+                    e.target.parentElement.appendChild(divExito);
+                },
+                error: (err) => console.log(err)
+            });
+        }
+
     });
 }
