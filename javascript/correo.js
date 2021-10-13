@@ -46,7 +46,7 @@ const mailer = () => {
         if(validarForm(nombre, email, cel, producto, msg)){
             $.ajax({
                 method: 'POST',
-                url: 'https://formsubmit.co/ajax/uki.greco@gmail.com',
+                url: 'https://formsubmit.co/ajax/Entreideascl@gmail.com',
                 dataType: 'json',
                 accepts: 'application/json',
                 data: {
