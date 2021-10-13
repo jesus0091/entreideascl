@@ -4,7 +4,7 @@ const armarCard = (pProducto) => {
     card.classList.add('card');
     card.innerHTML = `
     <div class="card-img">
-        <img src="${pProducto.img}" alt="">
+        <img src="${pProducto.img}" alt="imagen">
     </div>
     <div class="card-text">
         <h4>${pProducto.producto}</h4>
